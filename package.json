@@ -1,0 +1,41 @@
+{
+  "name": "SellcraftCRM2",
+  "version": "1.0.0",
+  "description": "Sellcraft ATS API",
+  "main": "index.js",
+  "engines": {
+    "node": "14.13.0"
+  },
+  "scripts": {
+    "dev": " nodemon index.js | bunyan -o short -L",
+    "test": " env-cmd -f ./config/test.env  nodemon index.js | bunyan -o short -L",
+    "start": "node index.js | bunyan -o short -L"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.1028.0",
+    "bcryptjs": "^2.4.3",
+    "bunyan": "^1.8.15",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "handlebars": "^4.7.7",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.11.15",
+    "multer": "^1.4.3",
+    "multer-s3": "^3.0.1",
+    "nodemailer": "^6.6.3",
+    "read-excel-file": "^5.2.10",
+    "swagger-ui-express": "^4.1.6",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.15.4",
+    "@babel/core": "^7.15.5",
+    "@babel/preset-env": "^7.15.4",
+    "babel-plugin-module-resolver": "^4.1.0",
+    "env-cmd": "^10.1.0"
+  }
+}
